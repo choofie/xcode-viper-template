@@ -10,12 +10,12 @@ import UIKit
 
 class HomeRouter {
 
-    private weak var mainRouter: MainRouter?
+    private weak var mainRouter: MainWireframe?
     private var presenter: HomePresenter?
     private var interactor: HomeInteractor?
     private let view: HomeView
 
-    init(withMainRouter mainRouter: MainRouter, view: HomeView) {
+    init(withMainRouter mainRouter: MainWireframe, view: HomeView) {
         self.view = view
         self.mainRouter = mainRouter
         interactor = HomeInteractor()
