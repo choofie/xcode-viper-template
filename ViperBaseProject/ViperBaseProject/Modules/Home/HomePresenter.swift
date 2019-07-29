@@ -11,10 +11,10 @@ import Foundation
 class HomePresenter {
 
     private weak var view: HomeView?
-    private weak var router: HomeRouter?
+    private weak var router: HomeWireframe?
     private weak var interactor: HomeInteractor?
 
-    init(view: HomeView, router: HomeRouter, interactor: HomeInteractor?) {
+    init(view: HomeView, router: HomeWireframe, interactor: HomeInteractor?) {
         self.view = view
         self.router = router
         self.interactor = interactor
