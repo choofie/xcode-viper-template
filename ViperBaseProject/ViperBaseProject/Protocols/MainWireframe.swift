@@ -1,7 +1,14 @@
+//
+//  MainWireframe.swift
+//  ViperBaseProject
+//
+//  Created by Mate Lorincz on 2019. 07. 28..
+//  Copyright © 2019. MateLorincz. All rights reserved.
+//
 
 import UIKit
 
-protocol MainRouter: class {
+protocol MainWireframe: class {
 
     func pushScreen(_ screen: Screen, payload: Any?)
     func popWireframe(_ wireframe: Wireframe, toRoot isPopToRoot: Bool)
@@ -9,7 +16,7 @@ protocol MainRouter: class {
 
 // MARK: - Protocol Extension
 
-extension MainRouter {
+extension MainWireframe {
 
     func pushScreen(_ screen: Screen, payload: Any? = .none) {
         pushScreen(screen, payload: payload)

@@ -1,14 +1,14 @@
 //
-//  MainWireframe.swift
-//  MusicTinder
+//  MainRouter.swift
+//  ViperBaseProject
 //
-//  Created by Mate Lorincz on 03/11/16.
-//  Copyright © 2016 MateLorincz. All rights reserved.
+//  Created by Mate Lorincz on 2019. 07. 28..
+//  Copyright © 2019. MateLorincz. All rights reserved.
 //
 
 import UIKit
 
-class MainWireframe {
+class MainRouter {
 
     private var mainNavigationController = UINavigationController()
     private var wireframes = [Wireframe]()
@@ -20,16 +20,16 @@ class MainWireframe {
 
 // MARK: - Wireframe
 
-extension MainWireframe: Wireframe {
+extension MainRouter: Wireframe {
 
     func viewController() -> UIViewController {
         return mainNavigationController
     }
 }
 
-// MARK: - MainRouter
+// MARK: - MainWireframe
 
-extension MainWireframe: MainRouter {
+extension MainRouter: MainWireframe {
 
     func pushScreen(_ screen: Screen, payload: Any?) {
         let wireframe = wireframeForScreen(screen)
@@ -53,7 +53,7 @@ extension MainWireframe: MainRouter {
 
 // MARK: - Private Extension
 
-private extension MainWireframe {
+private extension MainRouter {
 
     func wireframeForScreen(_ screen: Screen) -> Wireframe {
 

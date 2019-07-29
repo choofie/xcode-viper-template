@@ -6,7 +6,6 @@
 //  Copyright © 2019. MateLorincz. All rights reserved.
 //
 
-
 import UIKit
 
 @UIApplicationMain
@@ -35,7 +34,7 @@ private extension AppDelegate {
     }
 
     func displayLandingWireframe() {
-        rootWireframe = MainWireframe()
+        rootWireframe = MainRouter()
         window?.rootViewController = rootWireframe?.viewController()
         window?.makeKeyAndVisible()
     }
