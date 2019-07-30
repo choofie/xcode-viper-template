@@ -2,8 +2,35 @@ This repository contains a base project that provides a starting point for an iO
 Also includes an Xcode file template to generate VIPER modules with ease.
 
 # VIPER iOS base project
-This is base project that provides a starting point for an application that uses VIPER architecture.
-Also includes a template for Xcode that generates the files for VIPER modules.
+
+<pre>
+&lt;ViperBaseProject&gt;
+   &lt;Modules&gt;
+   
+      &lt;Home&gt;
+         &lt;UI&gt;
+            Home.storyboard
+         HomeView.swift
+         HomeViewController.swift
+         HomeEventHandler.swift
+         HomePresenter.swift
+         HomeInteractorDelegate.swift
+         HomeInteractor.swift
+         HomeWireframe.swift
+         HomeRouter.swift
+         
+      &lt;Main&gt;
+         &lt;Models&gt;
+            Screen.swift
+         MainRouter.swift
+         
+   &lt;Protocols&gt;
+      Wireframe.swift
+      MainWireframe.swift
+      PayloadHandler.swift
+      
+Appdelegate.swift
+</pre>
 
 <p align="center">
 <img src="images/viper-diagram.png" width="811" title="VIPER Architecture">
