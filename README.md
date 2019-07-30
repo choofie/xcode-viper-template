@@ -1,4 +1,4 @@
-# ViperBase
+# VIPER base project and Xcode File Template
 This is base project that provides a starting point for an application that uses VIPER architecture.
 Also includes a template for Xcode that generates the files for VIPER modules.
 
